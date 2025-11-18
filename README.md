@@ -1,6 +1,9 @@
 Identifies: Tech Communicator
-Computer Science Undergrad: University of Westminster
+
+Computer Science Undergrad: University of Westminster, IIT LK.
+
 Associate SE: LOLCTECH, LK.
+
 Skills: knows 100 ways of avoiding procrastination, but last minute thrill keeps me attached.
 
 [![wakatime](https://wakatime.com/badge/user/018c62f8-0dfd-4403-a80b-cfbb08a36703.svg)](https://wakatime.com/@018c62f8-0dfd-4403-a80b-cfbb08a36703)

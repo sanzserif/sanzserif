@@ -1,11 +1,88 @@
-Identifies: Tech Communicator
+<div align="center">
 
-Computer Science Undergrad: University of Westminster, IIT LK.
+```
+███████╗ █████╗ ███╗   ██╗███████╗███████╗██████╗ ██╗███████╗
+██╔════╝██╔══██╗████╗  ██║╚══███╔╝██╔════╝██╔══██╗██║██╔════╝
+███████╗███████║██╔██╗ ██║  ███╔╝ ███████╗██████╔╝██║█████╗  
+╚════██║██╔══██║██║╚██╗██║ ███╔╝  ╚════██║██╔══██╗██║██╔══╝  
+███████║██║  ██║██║ ╚████║███████╗███████║██║  ██║██║██║     
+╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝     
+```
 
-Associate SE: LOLCTECH, LK.
+</div>
 
-Skills: knows 100 ways of avoiding procrastination, but last minute thrill keeps me attached.
+<table>
+<tr>
+<td valign="top" width="42%">
 
-[![wakatime](https://wakatime.com/badge/user/018c62f8-0dfd-4403-a80b-cfbb08a36703.svg)](https://wakatime.com/@018c62f8-0dfd-4403-a80b-cfbb08a36703)
+```
+@@@@@@@@@@@@@@@@@@@@@@#%@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@+      ##@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@%       %@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@         #  %@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@#            %@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@%  =+++++-   *@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@  ********+=  +@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@% **=#####***+  @@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@  ===  ==**+=   +@@@@@@@@@@
+@@@@@@@@@@@@@@@@@%  %+       **   =@@@@@@@@@@
+@@@@@@@@@@@@@@@@@   +++  **  *#+  @@@@@@@@@@@
+@@@@@@@@@@@@@@@@@ # *###*****+++ + @@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@ +**#**=+*-*++  + @@@@@@@@@@
+@@@@@@@@@@@@@@@@@   ***** *-  *++   @@@@@@@@@@
+@@@@@@@@@@@@@@@@@   -+**##*+++++=  %@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@####-  ==++++=  +%@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@###=       +=   #@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@#- ++++= =.    @@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@#  *****+=- =  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@#  .@@@@* **+= %@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@#  @@@@+   *@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@#   #@@-  -#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@#   #@@  =@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@+ %@=-- @@     @
+%          +*@              @
+            *#@
+              *@
+```
 
-<a href="https://app.daily.dev/sanzserif"><img src="https://api.daily.dev/devcards/v2/nV62h7ZPAMx9s1479PC5i.png?type=wide&r=i3r" width="652" alt="Nipun Kariyawasam's Dev Card"/></a>
+</td>
+<td valign="top">
+
+```
+nipun@github
+────────────────────────────────────────────
+
+OS: ........................... Windows
+Uptime: ......... <!--UPTIME-->24 years, 10 months, 21 days<!--/UPTIME-->
+Certification: ........ CS grad, Uni of Westminster
+Certified Batch: .................. Class of 2026
+Current Host: ............. LOLC Technologies
+Kernel: ................. Associate SE
+IDE: ................... VS Code, Terminal
+
+Languages.Programming: ............ TypeScript, Java
+Languages.Real: .......... English, Sinhala
+Hobbies: ........................ Tech Communicator
+
+─ Contact ──────────────────────────────────
+Email: ............. hi@nipun.is-a.dev
+OnlyFans: ........... linktr.ee/sanszerif
+
+─ GitHub Stats ─────────────────────────────
+Repos: <!--REPOS-->…<!--/REPOS--> | Stars: <!--STARS-->…<!--/STARS-->
+Commits: <!--COMMITS-->…<!--/COMMITS--> | Followers: <!--FOLLOWERS-->…<!--/FOLLOWERS-->
+```
+
+[![wakatime](https://wakatime.com/badge/user/018c62f8-0dfd-4403-a80b-cfbb08a36703.svg?style=flat-square)](https://wakatime.com/@018c62f8-0dfd-4403-a80b-cfbb08a36703)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<a href="https://app.daily.dev/sanzserif">
+  <img src="https://api.daily.dev/devcards/v2/nV62h7ZPAMx9s1479PC5i.png?type=wide&r=i3r" width="380" alt="Nipun's Dev Card"/>
+</a>
+
+</div>

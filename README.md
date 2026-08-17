@@ -69,8 +69,8 @@ Email: ............. hi@nipun.is-a.dev
 OnlyFans: ........... linktr.ee/sanszerif
 
 ─ GitHub Stats ─────────────────────────────
-Repos: <!--REPOS-->…<!--/REPOS--> | Stars: <!--STARS-->…<!--/STARS-->
-Commits: <!--COMMITS-->…<!--/COMMITS--> | Followers: <!--FOLLOWERS-->…<!--/FOLLOWERS-->
+Repos: <!--REPOS-->15<!--/REPOS--> | Stars: <!--STARS-->2<!--/STARS-->
+Commits: <!--COMMITS-->254<!--/COMMITS--> | Followers: <!--FOLLOWERS-->16<!--/FOLLOWERS-->
 ```
 
 [![wakatime](https://wakatime.com/badge/user/018c62f8-0dfd-4403-a80b-cfbb08a36703.svg?style=flat-square)](https://wakatime.com/@018c62f8-0dfd-4403-a80b-cfbb08a36703)

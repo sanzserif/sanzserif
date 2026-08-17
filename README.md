@@ -9,80 +9,9 @@
 ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝     
 ```
 
-</div>
-
-<table>
-<tr>
-<td valign="top" width="42%">
-
-```
-@@@@@@@@@@@@@@@@@@@@@@#%@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@+      ##@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@%       %@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@         #  %@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@#            %@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@%  =+++++-   *@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@  ********+=  +@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@% **=#####***+  @@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@  ===  ==**+=   +@@@@@@@@@@
-@@@@@@@@@@@@@@@@@%  %+       **   =@@@@@@@@@@
-@@@@@@@@@@@@@@@@@   +++  **  *#+  @@@@@@@@@@@
-@@@@@@@@@@@@@@@@@ # *###*****+++ + @@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@ +**#**=+*-*++  + @@@@@@@@@@
-@@@@@@@@@@@@@@@@@   ***** *-  *++   @@@@@@@@@@
-@@@@@@@@@@@@@@@@@   -+**##*+++++=  %@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@####-  ==++++=  +%@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@###=       +=   #@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@#- ++++= =.    @@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@#  *****+=- =  @@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@#  .@@@@* **+= %@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@#  @@@@+   *@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@#   #@@-  -#@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@#   #@@  =@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@+ %@=-- @@     @
-%          +*@              @
-            *#@
-              *@
-```
-
-</td>
-<td valign="top">
-
-```
-nipun@github
-────────────────────────────────────────────
-
-OS: ........................... Windows
-Uptime: ......... <!--UPTIME-->24 years, 10 months, 21 days<!--/UPTIME-->
-Certification: ........ CS grad, Uni of Westminster
-Certified Batch: .................. Class of 2026
-Current Host: ............. LOLC Technologies
-Kernel: ................. Associate SE
-IDE: ................... VS Code, Terminal
-
-Languages.Programming: ............ TypeScript, Java
-Languages.Real: .......... English, Sinhala
-Hobbies: ........................ Tech Communicator
-
-─ Contact ──────────────────────────────────
-Email: ............. hi@nipun.is-a.dev
-OnlyFans: ........... linktr.ee/sanszerif
-
-─ GitHub Stats ─────────────────────────────
-Repos: <!--REPOS-->15<!--/REPOS--> | Stars: <!--STARS-->2<!--/STARS-->
-Commits: <!--COMMITS-->254<!--/COMMITS--> | Followers: <!--FOLLOWERS-->16<!--/FOLLOWERS-->
-```
-
-[![wakatime](https://wakatime.com/badge/user/018c62f8-0dfd-4403-a80b-cfbb08a36703.svg?style=flat-square)](https://wakatime.com/@018c62f8-0dfd-4403-a80b-cfbb08a36703)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-<a href="https://app.daily.dev/sanzserif">
-  <img src="https://api.daily.dev/devcards/v2/nV62h7ZPAMx9s1479PC5i.png?type=wide&r=i3r" width="380" alt="Nipun's Dev Card"/>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-dark.svg">
+  <img src="profile-light.svg" alt="Nipun's GitHub profile card" width="100%">
+</picture>
 
 </div>

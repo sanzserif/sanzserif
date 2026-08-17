@@ -93,7 +93,7 @@ while True:
     repo_list = gh_get(
         f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}"
     )
-    if not repo_list:
+    if not isinstance(repo_list, list) or not repo_list:
         break
     stars += sum(r.get("stargazers_count", 0) for r in repo_list)
     if len(repo_list) < 100:
@@ -191,7 +191,7 @@ INFO_LINE_H = 16
 
 ASCII_LINES  = ASCII_ART.split("\n")
 ASCII_N      = len(ASCII_LINES)
-ASCII_MAX_W  = max(len(l) for l in ASCII_LINES)
+ASCII_MAX_W  = max(len(line) for line in ASCII_LINES)
 ASCII_PX_W   = int(ASCII_MAX_W * ASCII_CHAR_W) + 4
 INFO_PX_W    = int(LINE_WIDTH  * INFO_CHAR_W)  + 4
 

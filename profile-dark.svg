@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="758" height="448" viewBox="0 0 758 448" role="img" aria-label="GitHub profile card">
-  <rect width="758" height="448" rx="6" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="758" height="400" viewBox="0 0 758 400" role="img" aria-label="GitHub profile card">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Doto:ROND,wght@100,700&display=swap');
+      .info { font-family: 'Doto', 'Courier New', monospace; font-weight: 700; font-variation-settings: 'ROND' 100; }
+    </style>
+  </defs>
+  <rect width="758" height="400" rx="6" fill="#0d1117"/>
   <text font-family="'Courier New', Courier, monospace" font-size="7.5" fill="#8b949e" xml:space="preserve" x="24" y="31.50">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
   <text font-family="'Courier New', Courier, monospace" font-size="7.5" fill="#8b949e" xml:space="preserve" x="24" y="40.50">@@@@@@@@@@@@@@@@@@@@@@@@*.::.::-::-#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
   <text font-family="'Courier New', Courier, monospace" font-size="7.5" fill="#8b949e" xml:space="preserve" x="24" y="49.50">@@@@@@@@@@@@@@@@@@@@%+:::::--:-:-::::##@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
@@ -32,25 +38,22 @@
   <text font-family="'Courier New', Courier, monospace" font-size="7.5" fill="#8b949e" xml:space="preserve" x="24" y="292.50">@@@@@+--:::::::::--:+%@-==-=--@@--::::::::-:::::::-----:---::::::</text>
   <text font-family="'Courier New', Courier, monospace" font-size="7.5" fill="#8b949e" xml:space="preserve" x="24" y="301.50">%---::::::::::-----+*@=--=---::---::::::::::----------:-----:::::</text>
   <text font-family="'Courier New', Courier, monospace" font-size="7.5" fill="#8b949e" xml:space="preserve" x="24" y="310.50">--::::---::::------*#@*----:::---:::::::::--::------:-:--::::::::</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#f0883e" x="340" y="36.50">sanzserif@github</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#6e7681" x="340" y="52.50">────────────────────────────────────────────────────</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="84.50">OS: .........................................Windows</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="100.50">Uptime: ................24 years, 10 months, 22 days</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="116.50">Certification: ..........CS grad, Uni of Westminster</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="132.50">Certified Batch: ......................Class of 2026</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="148.50">Current Host: .....................LOLC Technologies</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="164.50">Kernel: ................................Associate SE</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="180.50">IDE: ..............................VS Code, Terminal</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="212.50">Languages.Programming: .............TypeScript, Java</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="228.50">Languages.Real: ....................English, Sinhala</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="244.50">Hobbies: ..........................Tech Communicator</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#6e7681" x="340" y="276.50">─ Contact ──────────────────────────────────────────</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="292.50">Email: ............................hi@nipun.is-a.dev</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="308.50">Social: .........................linktr.ee/sanzserif</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#6e7681" x="340" y="340.50">─ GitHub Stats ─────────────────────────────────────</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="356.50">Repos: ...........................................15</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="372.50">Stars: ............................................2</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="388.50">Commits: ........................................261</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="404.50">Followers: .......................................16</text>
-  <text font-family="'Courier New', Courier, monospace" font-size="12.5" xml:space="preserve" fill="#c9d1d9" x="340" y="420.50">Wakatime: .........................1,482 hrs 42 mins</text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="36.50"><tspan fill="#58a6ff">sanzserif@github </tspan><tspan fill="#484f58">───────────────────────────────────</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="68.50"><tspan fill="#ff79c6">OS: </tspan><tspan fill="#484f58">.........................................</tspan><tspan fill="#c9d1d9">Windows</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="84.50"><tspan fill="#ff79c6">Uptime: </tspan><tspan fill="#484f58">................</tspan><tspan fill="#c9d1d9">24 years, 10 months, 22 days</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="100.50"><tspan fill="#ff79c6">Certification: </tspan><tspan fill="#484f58">..........</tspan><tspan fill="#c9d1d9">CS grad, Uni of Westminster</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="116.50"><tspan fill="#ff79c6">Certified Batch: </tspan><tspan fill="#484f58">......................</tspan><tspan fill="#c9d1d9">Class of 2026</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="132.50"><tspan fill="#ff79c6">Current Host: </tspan><tspan fill="#484f58">.....................</tspan><tspan fill="#c9d1d9">LOLC Technologies</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="148.50"><tspan fill="#ff79c6">Kernel: </tspan><tspan fill="#484f58">................................</tspan><tspan fill="#c9d1d9">Associate SE</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="164.50"><tspan fill="#ff79c6">IDE: </tspan><tspan fill="#484f58">..............................</tspan><tspan fill="#c9d1d9">VS Code, Terminal</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="196.50"><tspan fill="#ff79c6">Languages.Programming: </tspan><tspan fill="#484f58">.............</tspan><tspan fill="#c9d1d9">TypeScript, Java</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="212.50"><tspan fill="#ff79c6">Languages.Real: </tspan><tspan fill="#484f58">....................</tspan><tspan fill="#c9d1d9">English, Sinhala</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="228.50"><tspan fill="#ff79c6">Hobbies: </tspan><tspan fill="#484f58">..........................</tspan><tspan fill="#c9d1d9">Tech Communicator</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="260.50"><tspan fill="#58a6ff">─ Contact </tspan><tspan fill="#484f58">──────────────────────────────────────────</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="276.50"><tspan fill="#ff79c6">Email: </tspan><tspan fill="#484f58">............................</tspan><tspan fill="#c9d1d9">hi@nipun.is-a.dev</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="292.50"><tspan fill="#ff79c6">Social: </tspan><tspan fill="#484f58">.........................</tspan><tspan fill="#c9d1d9">linktr.ee/sanzserif</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="324.50"><tspan fill="#58a6ff">─ GitHub Stats </tspan><tspan fill="#484f58">─────────────────────────────────────</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="340.50"><tspan fill="#ff79c6">Repos</tspan><tspan fill="#484f58">......................</tspan><tspan fill="#c9d1d9">0</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ff79c6">Stars</tspan><tspan fill="#484f58">...............</tspan><tspan fill="#c9d1d9">0</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="356.50"><tspan fill="#ff79c6">Commits</tspan><tspan fill="#484f58">....................</tspan><tspan fill="#c9d1d9">0</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ff79c6">Followers</tspan><tspan fill="#484f58">...........</tspan><tspan fill="#c9d1d9">0</tspan></text>
+  <text class="info" font-size="12.5" xml:space="preserve" x="340" y="372.50"><tspan fill="#ff79c6">Wakatime: </tspan><tspan fill="#484f58">.......................................</tspan><tspan fill="#c9d1d9">N/A</tspan></text>
 </svg>

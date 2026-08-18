@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Generate GitHub profile card SVGs for dark and light themes.
 Outputs: profile-dark.svg and profile-light.svg
@@ -271,7 +271,8 @@ def generate_svg(theme_name):
     out.append(f'  </defs>')
 
     # Background
-    out.append(f'  <rect width="{svg_w}" height="{SVG_H}" rx="6" fill="{t[\"bg\"]}"/>')
+    bg = t["bg"]
+    out.append(f'  <rect width="{svg_w}" height="{SVG_H}" rx="6" fill="{bg}"/>')
 
     # -- Left panel -----------------------------------------------------------
     if png_uri:

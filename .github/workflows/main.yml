@@ -1,4 +1,4 @@
-name: Update README Stats
+﻿name: Update README Stats
 
 permissions:
   contents: write
@@ -18,20 +18,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Install python-dateutil
-        run: pip install python-dateutil
-
       - name: Generate profile SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: sanzserif
         run: python3 .github/scripts/generate_svg.py
-
-      - name: Update README stats
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: sanzserif
-        run: python3 .github/scripts/update_readme.py
 
       - name: Commit and push
         run: |

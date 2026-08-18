@@ -1,4 +1,4 @@
-﻿name: Update README Stats
+name: Update README Stats
 
 permissions:
   contents: write
@@ -28,6 +28,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
           git add README.md profile-dark.svg profile-light.svg
           git diff --cached --quiet && exit 0
           git commit -m "chore: update profile stats [skip ci]"

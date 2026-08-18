@@ -164,7 +164,8 @@ def rule(title="", width=LINE_WIDTH):
 def header_line(text, width=LINE_WIDTH):
     """Username@github ─────── line."""
     dashes = "\u2500" * max(width - len(text) - 1, 0)
-    return [(text + " ", "h"), (dashes, "d")]
+    # Use "s" (blue) for the header name, matching separator colour
+    return [(text + " ", "s"), (dashes, "d")]
 
 
 # ── RIGHT-PANEL CONTENT ───────────────────────────────────────────────────────
@@ -229,37 +230,60 @@ ascii_last_y = PAD + ASCII_FONT + (ASCII_N - 1) * ASCII_LINE_H
 info_last_y  = PAD + INFO_FONT  + (len(info) - 1) * INFO_LINE_H
 SVG_H = int(max(ascii_last_y, info_last_y)) + PAD + 4
 
+# Portrait PNG aspect ratio: the user's images are taller than wide (~2:3).
+# We compute the left panel width to fill SVG_H at that ratio so the image
+# sits flush top-to-bottom without letterboxing.
+PNG_ASPECT_W = 413   # approximate pixel width of the provided portrait PNGs
+PNG_ASPECT_H = 540   # approximate pixel height
+IMG_H = SVG_H - 2 * PAD          # fill the full inner height
+IMG_W = int(IMG_H * PNG_ASPECT_W / PNG_ASPECT_H)  # keep portrait aspect ratio
+
+# Recompute INFO_X using the image width (wider than ASCII fallback text)
+IMG_INFO_X = PAD + IMG_W + GAP
+
 # ── THEMES ───────────────────────────────────────────────────────────────────
 THEMES = {
     "dark": {
         "bg":    "#0d1117",
         "ascii": "#8b949e",
-        "h":     "#f0883e",   # header / username
+        "h":     "#f0883e",   # (unused for header now, kept for future use)
         "k":     "#ff79c6",   # key (fuchsia)
         "d":     "#484f58",   # dots / muted
         "v":     "#c9d1d9",   # value / normal text
-        "s":     "#58a6ff",   # separator title
+        "s":     "#58a6ff",   # separator title + header username (blue)
         "g":     "#3fb950",   # green (additions)
         "r":     "#f85149",   # red (deletions)
     },
     "light": {
         "bg":    "#ffffff",
         "ascii": "#57606a",
-        "h":     "#953800",   # header / username
+        "h":     "#953800",   # (unused for header now)
         "k":     "#b4009e",   # key (fuchsia)
         "d":     "#afb8c1",   # dots / muted
         "v":     "#24292f",   # value / normal text
-        "s":     "#0969da",   # separator title
+        "s":     "#0969da",   # separator title + header username (blue)
         "g":     "#1a7f37",   # green
         "r":     "#cf222e",   # red
     },
 }
 
+# Doto font: weight 700, roundness axis (ROND) = 100
+# Loaded via Google Fonts @import so GitHub Markdown/SVG renderers can fetch it.
+DOTO_IMPORT = (
+    "@import url('https://fonts.googleapis.com/css2?"
+    "family=Doto:ROND,wght@100,700&display=swap');"
+)
+DOTO_CLASS = (
+    "font-family: 'Doto', 'Courier New', monospace;"
+    " font-weight: 700;"
+    " font-variation-settings: 'ROND' 100;"
+)
 
-def spans_svg(tokens, theme, x, y, font_size, font_family):
+
+def spans_svg(tokens, theme, x, y, font_size):
     """Render a list of (text, token_type) as a <text> with <tspan> children."""
     base = (
-        f'<text font-family="{font_family}" font-size="{font_size}"'
+        f'<text class="info" font-size="{font_size}"'
         f' xml:space="preserve" x="{x}" y="{y:.2f}">'
     )
     parts = []
@@ -272,33 +296,53 @@ def spans_svg(tokens, theme, x, y, font_size, font_family):
 def generate_svg(theme_name):
     t = THEMES[theme_name]
     out = []
-    font_family = "'Courier New', Courier, monospace"
+    mono = "'Courier New', Courier, monospace"
 
-    out.append(
-        f'<svg xmlns="http://www.w3.org/2000/svg"'
-        f' width="{SVG_W}" height="{SVG_H}"'
-        f' viewBox="0 0 {SVG_W} {SVG_H}"'
-        f' role="img" aria-label="GitHub profile card">'
-    )
-
-    # Background
-    out.append(f'  <rect width="{SVG_W}" height="{SVG_H}" rx="6" fill="{t["bg"]}"/>')
-
-    # ── Left panel: PNG image or fallback text ASCII art ───────────────────
+    # ── Check for user-provided portrait PNG ───────────────────────────────
     png_path = os.path.join(os.path.dirname(__file__), "..", "..", f"ui-{theme_name}.png")
     png_uri = load_png_b64(png_path)
 
+    # When PNG is present, widen SVG to use the portrait-aspect left panel
+    left_w = IMG_W if png_uri else ASCII_PX_W
+    info_x = PAD + left_w + GAP
+    svg_w  = info_x + INFO_PX_W + PAD
+
+    out.append(
+        f'<svg xmlns="http://www.w3.org/2000/svg"'
+        f' width="{svg_w}" height="{SVG_H}"'
+        f' viewBox="0 0 {svg_w} {SVG_H}"'
+        f' role="img" aria-label="GitHub profile card">'
+    )
+
+    # ── Embedded style: Doto font ───────────────────────────────────────────
+    out.append(f'  <defs>')
+    out.append(f'    <style>')
+    out.append(f'      {DOTO_IMPORT}')
+    out.append(f'      .info {{ {DOTO_CLASS} }}')
+    out.append(f'    </style>')
     if png_uri:
-        img_h = int(ascii_last_y - PAD)
+        # Clip the portrait image to the left-panel rectangle
+        out.append(
+            f'    <clipPath id="left-clip">'
+            f'<rect x="{PAD}" y="{PAD}" width="{IMG_W}" height="{IMG_H}"/></clipPath>'
+        )
+    out.append(f'  </defs>')
+
+    # Background
+    out.append(f'  <rect width="{svg_w}" height="{SVG_H}" rx="6" fill="{t["bg"]}"/>')
+
+    # ── Left panel ─────────────────────────────────────────────────────────
+    if png_uri:
         out.append(
             f'  <image href="{png_uri}"'
             f' x="{PAD}" y="{PAD}"'
-            f' width="{ASCII_PX_W}" height="{img_h}"'
-            f' preserveAspectRatio="xMidYMid meet"/>'
+            f' width="{IMG_W}" height="{IMG_H}"'
+            f' preserveAspectRatio="xMidYMid slice"'
+            f' clip-path="url(#left-clip)"/>'
         )
     else:
         ascii_attrs = (
-            f'font-family="{font_family}"'
+            f'font-family="{mono}"'
             f' font-size="{ASCII_FONT}"'
             f' fill="{t["ascii"]}"'
             f' xml:space="preserve"'
@@ -312,7 +356,7 @@ def generate_svg(theme_name):
         if not tokens:
             continue
         y = PAD + INFO_FONT + i * INFO_LINE_H
-        out.append(spans_svg(tokens, t, INFO_X, y, INFO_FONT, font_family))
+        out.append(spans_svg(tokens, t, info_x, y, INFO_FONT))
 
     out.append("</svg>")
     return "\n".join(out)

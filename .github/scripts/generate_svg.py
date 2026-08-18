@@ -255,7 +255,8 @@ def generate_svg(theme_name):
     t = THEMES[theme_name]
     out = []
 
-    png_path = os.path.join(ASSETS_DIR, f"ui-{theme_name}.png")
+    # Temporarily use ui-dark.png for both themes until ui-light.png is fixed
+    png_path = os.path.join(ASSETS_DIR, "ui-dark.png")
     png_uri = load_png_b64(png_path)
 
     info_x = PAD + IMG_W + GAP

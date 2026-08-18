@@ -271,7 +271,7 @@ THEMES = {
 # Loaded via Google Fonts @import so GitHub Markdown/SVG renderers can fetch it.
 DOTO_IMPORT = (
     "@import url('https://fonts.googleapis.com/css2?"
-    "family=Doto:ROND,wght@100,700&display=swap');"
+    "family=Doto:ROND,wght@100,700&amp;display=swap');"
 )
 DOTO_CLASS = (
     "font-family: 'Doto', 'Courier New', monospace;"

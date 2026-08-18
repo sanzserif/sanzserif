@@ -158,7 +158,7 @@ info = [
     [],
     rule("Contact"),
     kv("Email: ",   "hi@nipun.is-a.dev"),
-    kv("Social: ",  "linktr.ee/sanzserif"),
+    kv("Social: ",  "linktr.ee/sanszerif"),
     [],
     rule("GitHub Stats"),
     kv("Repos", str(pub_repos), 28) + [(" | ", "d")] + kv("Stars", f"{stars:,}", 21),
@@ -233,7 +233,7 @@ DOTO_FACE = (
 )
 DOTO_CLASS = (
     "font-family: 'Doto', 'Courier New', monospace;"
-    " font-weight: 700;"
+    " font-weight: 900;"
     " font-variation-settings: 'ROND' 100;"
 )
 

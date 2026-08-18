@@ -15,6 +15,10 @@ import os
 import html
 from datetime import date, timedelta
 
+# -- PATH CONSTANTS -----------------------------------------------------------
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ASSETS_DIR = os.path.join(REPO_ROOT, "Assets")
+
 # -- CONFIG -------------------------------------------------------------------
 BORN = date(2001, 9, 27)
 USERNAME = os.environ.get("GITHUB_USERNAME", "sanzserif")
@@ -214,11 +218,18 @@ THEMES = {
     },
 }
 
-# Doto font: weight 700, roundness axis (ROND) = 100
-# Loaded via Google Fonts @import so GitHub Markdown/SVG renderers can fetch it.
-DOTO_IMPORT = (
-    "@import url('https://fonts.googleapis.com/css2?"
-    "family=Doto:ROND,wght@100,700&amp;display=swap');"
+# Doto variable font: weight 100-900, roundness axis (ROND) = 100
+# Embedded as base64 woff2 so GitHub CSP / Camo proxy allows it
+_woff2_path = os.path.join(ASSETS_DIR, "Doto[ROND,wght].woff2")
+with open(_woff2_path, "rb") as _f:
+    _woff2_b64 = base64.b64encode(_f.read()).decode()
+
+DOTO_FACE = (
+    "@font-face {"
+    "font-family:'Doto';"
+    "font-weight:100 900;"
+    f"src:url('data:font/woff2;base64,{_woff2_b64}') format('woff2');"
+    "}"
 )
 DOTO_CLASS = (
     "font-family: 'Doto', 'Courier New', monospace;"
@@ -244,7 +255,7 @@ def generate_svg(theme_name):
     t = THEMES[theme_name]
     out = []
 
-    png_path = os.path.join(os.path.dirname(__file__), "..", "..", f"ui-{theme_name}.png")
+    png_path = os.path.join(ASSETS_DIR, f"ui-{theme_name}.png")
     png_uri = load_png_b64(png_path)
 
     info_x = PAD + IMG_W + GAP
@@ -260,7 +271,7 @@ def generate_svg(theme_name):
     # -- Embedded style: Doto font --------------------------------------------
     out.append(f'  <defs>')
     out.append(f'    <style>')
-    out.append(f'      {DOTO_IMPORT}')
+    out.append(f'      {DOTO_FACE}')
     out.append(f'      .info {{ {DOTO_CLASS} }}')
     out.append(f'    </style>')
     if png_uri:
@@ -297,7 +308,7 @@ def generate_svg(theme_name):
 
 # -- WRITE FILES --------------------------------------------------------------
 for theme in ("dark", "light"):
-    path = f"profile-{theme}.svg"
+    path = os.path.join(ASSETS_DIR, f"profile-{theme}.svg")
     with open(path, "w", encoding="utf-8") as f:
         f.write(generate_svg(theme))
     print(f"  Written {path}")
